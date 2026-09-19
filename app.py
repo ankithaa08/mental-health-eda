@@ -9,7 +9,8 @@ from sklearn.preprocessing import LabelEncoder
 st.set_page_config(page_title="Mental Health in Tech EDA", layout="wide")
 
 # Hide warnings
-st.set_option('deprecation.showPyplotGlobalUse', False)
+import warnings
+warnings.filterwarnings('ignore')
 sns.set_style('whitegrid')
 
 # Load and clean data
